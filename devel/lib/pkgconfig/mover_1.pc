@@ -1,0 +1,8 @@
+prefix=/home/pi/botpi/devel
+
+Name: mover_1
+Description: Description of mover_1
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pi/botpi/devel/lib 
+Requires: 

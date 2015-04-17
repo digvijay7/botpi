@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "ultrasonic_node")
+set(ultrasonic_node_MAINTAINER "pi <pi@todo.todo>")
+set(ultrasonic_node_DEPRECATED "")
+set(ultrasonic_node_VERSION "0.0.0")
+set(ultrasonic_node_BUILD_DEPENDS "roscpp" "rospy" "sensor_msgs")
+set(ultrasonic_node_RUN_DEPENDS "roscpp" "rospy" "sensor_msgs")
+set(ultrasonic_node_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mover_1")
+set(mover_1_MAINTAINER "pi <pi@todo.todo>")
+set(mover_1_DEPRECATED "")
+set(mover_1_VERSION "0.0.0")
+set(mover_1_BUILD_DEPENDS "rospy" "sensor_msgs" "std_msgs")
+set(mover_1_RUN_DEPENDS "rospy" "sensor_msgs" "std_msgs")
+set(mover_1_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,2 @@
+mover_1:ultrasonic_node
+-DCATKIN_DEVEL_PREFIX=/home/pi/botpi/devel -DCMAKE_INSTALL_PREFIX=/home/pi/botpi/install -G Unix Makefiles
