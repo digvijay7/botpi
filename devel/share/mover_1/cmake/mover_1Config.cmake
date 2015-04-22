@@ -122,7 +122,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/pi/botpi/devel/lib;/opt/ros/indigo/lib)
+    foreach(path /home/pi/botpi/devel/lib;/home/pi/catkin_ws2/devel/lib;/home/pi/botpi/devel/lib;/opt/ros/indigo/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

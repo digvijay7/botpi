@@ -7,7 +7,7 @@ from sensor_msgs.msg import Range
 import signal
 import sys
 
-THRESHOLD_DIST = 21 # in cm
+THRESHOLD_DIST = 41 # in cm
 FORWARD_TIME = 0.2
 BACKWARD_TIME = 0.2
 TURN_TIME = 0.3
@@ -32,8 +32,8 @@ US=[-1,-1,-1,-1,-1]
 # Ultrasonic ids / indices
 ultrasonic_indices= {}
 ultrasonic_indices["front"] = 0
-ultrasonic_indices["front left"] = 1
-ultrasonic_indices["front right"] = 2
+ultrasonic_indices["front right"] = 1
+ultrasonic_indices["front left"] = 2
 ultrasonic_indices["left"] = 3
 ultrasonic_indices["right"] = 4
 
@@ -47,7 +47,7 @@ def callback(data):
     us_num = num(data.header.frame_id) - 1
     #rospy.loginfo(str(us_num) + " " +str(data.range))
     if us_num >= 0 and us_num < 5:
-        US[us_num-1] = data.range
+        US[us_num] = data.range
 
 def signal_handler(signal, frame):
     GPIO.cleanup()
@@ -119,7 +119,9 @@ def decide_move(moves,last_moves):
         return TL
     if moves["tr"] and (fr - f > DIFF_DIST or (abs(fr - f)  < DIFF_DIST and f - fl > DIFF_DIST)):
         return TR
-    return MB
+    if moves["tl"]:
+        return TL
+    return TR
 
 
 
@@ -169,11 +171,11 @@ def main():
         fr = US[ultrasonic_indices["front right"]]
         l =  US[ultrasonic_indices["left"]]
         r =  US[ultrasonic_indices["right"]]
-        data += (str(fl) + " ")
-        data += (str(f) + " ")
-        data += (str(fr) + " ")
-        data += (str(l) + " ")
-        data += (str(r))
+        data += ("fl:" + str(fl) + " ")
+        data += ("f:"+str(f) + " ")
+        data += ("fr:"+str(fr) + " ")
+        data += ("l:"+str(l) + " ")
+        data += ("r:"+str(r))
         rospy.loginfo(data)
         if move == MF:
             move_forward(FORWARD_TIME)

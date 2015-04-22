@@ -233,48 +233,6 @@ sensor_msgs_generate_messages_py/fast:
 	cd /home/pi/botpi/build && $(MAKE) -f mover_1/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make mover_1/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
-# Convenience name for target.
-mover_1/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/pi/botpi/build && $(MAKE) -f CMakeFiles/Makefile2 mover_1/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : mover_1/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: mover_1/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/pi/botpi/build && $(MAKE) -f mover_1/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make mover_1/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-mover_1/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/pi/botpi/build && $(MAKE) -f CMakeFiles/Makefile2 mover_1/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : mover_1/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: mover_1/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/pi/botpi/build && $(MAKE) -f mover_1/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make mover_1/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-mover_1/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/pi/botpi/build && $(MAKE) -f CMakeFiles/Makefile2 mover_1/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : mover_1/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: mover_1/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/pi/botpi/build && $(MAKE) -f mover_1/CMakeFiles/std_msgs_generate_messages_py.dir/build.make mover_1/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -293,9 +251,6 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
 .PHONY : help
 

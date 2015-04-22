@@ -1,2 +1,2 @@
-mover_1:ultrasonic_node
+encoder:i2c_imu:motion_executor:mover_1:nmea_msgs:roslint:ultrasonic_node
 -DCATKIN_DEVEL_PREFIX=/home/pi/botpi/devel -DCMAKE_INSTALL_PREFIX=/home/pi/botpi/install -G Unix Makefiles

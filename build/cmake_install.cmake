@@ -125,7 +125,12 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/pi/botpi/build/gtest/cmake_install.cmake")
+  INCLUDE("/home/pi/botpi/build/roslint/cmake_install.cmake")
+  INCLUDE("/home/pi/botpi/build/nmea_msgs/cmake_install.cmake")
+  INCLUDE("/home/pi/botpi/build/encoder/cmake_install.cmake")
+  INCLUDE("/home/pi/botpi/build/motion_executor/cmake_install.cmake")
   INCLUDE("/home/pi/botpi/build/mover_1/cmake_install.cmake")
+  INCLUDE("/home/pi/botpi/build/i2c_imu/cmake_install.cmake")
   INCLUDE("/home/pi/botpi/build/ultrasonic_node/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)

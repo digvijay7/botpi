@@ -56,7 +56,7 @@ def get_us_data_from(value):
     global bus
     bus.write_byte(address, value)
     flag = True
-    time.sleep(0.1)
+    time.sleep(0.2)
     number = bus.read_byte(address)
     flag = False
     return number
